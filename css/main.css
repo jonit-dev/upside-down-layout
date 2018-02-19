@@ -19,14 +19,12 @@ body {
     margin-top: 1rem;
 }
 
-
-
 /*DESKTOP ONLY CODE*/
 
 @media screen and (min-width: 720px) {
 
     .logo {
-        font-size:8rem;
+        font-size: 8rem;
     }
 
     .logo + nav > ul li a img {
@@ -37,66 +35,16 @@ body {
         height: 25rem !important;
         background-position-y: top !important;
         background-size: 120% 100% !important;
+
     }
 
     .desktop-wrapper {
         display: inline-block;
-        float:left;
-        padding-left: 10%;
-        padding-right: 10%;
+        float: left;
+        max-width: 1200px !important;
+        margin-left: 10%;
+        margin-right: 10%;
     }
-
-
-   /* IPAD AND IPAD PRO =========================================== */
-
-    /* IPAD =========================================== */
-
-
-
-
-
-
-    /* IPAD PRO =========================================== */
-
-    /* Portrait and Landscape */
-    @media only screen
-    and (min-device-width: 1024px)
-    and (max-device-width: 1366px)
-    and (-webkit-min-device-pixel-ratio: 1.5) {
-        .desktop-wrapper {
-            padding-left: 8rem !important;
-            padding-right: 8rem !important;
-        }
-    }
-
-    /* Portrait */
-    @media only screen
-    and (min-device-width: 1024px)
-    and (max-device-width: 1366px)
-    and (orientation: portrait)
-    and (-webkit-min-device-pixel-ratio: 1.5) {
-        .desktop-wrapper {
-            padding-left: 8rem !important;
-            padding-right: 8rem !important;
-        }
-    }
-
-    /* Landscape */
-    @media only screen
-    and (min-device-width: 1024px)
-    and (max-device-width: 1366px)
-    and (orientation: landscape)
-    and (-webkit-min-device-pixel-ratio: 1.5) {
-
-        .desktop-wrapper {
-            padding-left: 8rem !important;
-            padding-right: 8rem !important;
-        }
-    }
-
-
-
-    /* end ipad pro code =========================================== */
 
     .desktop-photo-wrapper {
         text-align: center;
@@ -110,19 +58,18 @@ body {
         box-sizing: border-box;
     }
 
-    .photo-section > .photo-title,.photo-section > .photo-description {
+    .photo-section > .photo-title, .photo-section > .photo-description {
         font-size: 0.8rem;
         line-height: 1.5;
     }
 
     .bridge-description {
-        font-size:0.8rem !important;
+        font-size: 0.8rem !important;
     }
 
     .bridge-title {
-        font-size:1.3rem !important;
+        font-size: 1.3rem !important;
     }
-
 
     .desktop-wrapper-news-left {
         width: 66.66%;
@@ -144,11 +91,9 @@ body {
         padding: 1%;
     }
 
-    .photo-title,.photo-description, .bridge-title, .bridge-description, .church-description{
-        padding:1rem 0 0 0 !important;
+    .photo-title, .photo-description, .bridge-title, .bridge-description, .church-description {
+        padding: 1rem 0 0 0 !important;
     }
-
-
 
 }
 
@@ -166,10 +111,16 @@ header nav ul li {
 }
 
 .banner {
-    background: url('../images/toronto-subway-cropped.jpg') no-repeat center;
-    background-size: cover;
-    height: 15rem;
+    background-color: black;
+}
+
+.banner img {
+    max-width: 1200px;
     width: 100%;
+    height: inherit;
+    display: block;
+    margin: 0 auto;
+
 }
 
 /* ------------------------------------------------------------|
@@ -225,7 +176,6 @@ header nav ul li {
 footer > .logo {
     margin-bottom: .5rem;
 }
-
 
 .footer-links ul {
     list-style-type: none;
